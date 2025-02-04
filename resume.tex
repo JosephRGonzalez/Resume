@@ -1,0 +1,194 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{2025 CV}
+\author{\LaTeX{} Joseph R Gonzalez}
+\date{February 2025}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{headercolour}{Joseph}{Gonzalez}{B.S. in Computer Science}{white}
+
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \roundpic{joseph.jpeg}
+\end{center}
+
+\bg{cvgreen}{white}{About Me}\\[0.5em]
+
+{\footnotesize
+I am a senior Computer Science major with a Mathematics minor at the University of Houston, graduating in May 2025. With a strong foundation in programming languages like C++, Python, HTML/CSS/JavaScript, R, MATLAB, and SQL, I have developed a passion for software development and data science.
+}
+\bigskip
+
+\bg{cvgreen}{white}{Personal} \\[0.5em]
+Joseph Gonzalez
+
+Nationality: American
+
+Ethnicity: Latino
+
+\bigskip
+
+\bg{cvgreen}{white}{Areas of specialization} \\[0.5em]
+
+Software Development ~•~ Data Analysis ~•~ Machine Learning
+
+\bigskip
+
+
+
+\bigskip
+
+\bg{cvgreen}{white}{Interests}\\[0.5em]
+
+Technology, Coding, Fitness , Web Development, Gaming
+\bigskip
+
+\bg{cvgreen}{white}{Technical Skills}\\[0.5em]
+
+\texttt{C++} ~/~ \texttt{Python} ~/~ \texttt{R}
+
+\texttt{HTML5} ~/~ \texttt{CSS} ~/~ \texttt{JavaScript}
+
+\texttt{SQL} ~/~ \texttt{Git} ~/~ \texttt{MATLAB}
+
+\vspace{4em}
+
+\infobubble{\faGithub}{cvgreen}{white}{JosephRGonzalez}
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Short Resumé}
+
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2020--2025}{B.S. in Computer Science with Minor in Mathematics}{University of Houston}{Houston, Texas \color{cvred}}{Studied Computer Science with a minor in Mathematics at the University of Houston, earning multiple Dean's List honors. Took courses in AI and Data Science, developing a strong foundation in machine learning and analytics.}{uofh.jpg} \\
+    \cvevent{2024--Present}{Artificial Intelligence Training Analyst and Quality Reviewer}{Scale AI}{Houston, Texas \color{cvred}}{Optimized AI models through rigorous testing, debugging, and error analysis. Enhanced algorithm accuracy with precise fixes and LaTeX formatting. Led code reviews and process improvements to refine AI training workflows.}{scaleAI.jpg}
+\end{tabular}
+\vspace{3em}
+
+\begin{minipage}[t]{0.35\textwidth}
+    \section*{Awards and Scholarships}
+    \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.6\textwidth}}
+        2022 & Dean's List (3.732 GPA)\\
+        2023 & Dean's List (3.934 GPA)\\
+        2024 & American Bureau of Shipping Academic Excellence Endowed Scholarship
+    \end{tabular}
+    \bigskip
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Programming}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{skilllabelcolour}{iconcolour}{html, css} &  \barrule{0.3}{0.5em}{cvpurple}\\
+     \bg{skilllabelcolour}{iconcolour}{C++} & \barrule{0.55}{0.5em}{cvgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{python} & \barrule{0.4}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{R} & \barrule{0.45}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{javascript} & \barrule{0.3}{0.5em}{cvpurple} \\\
+     \bg{skilllabelcolour}{iconcolour}{SQL} & \barrule{0.4}{0.5em}{cvpurple} \\
+\end{tabular}
+\end{minipage}
+
+\section*{Curriculum}
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2024}{Data Science and Machine Learning}{MATH 4322}{University of Houston \color{cvred}}{Covered regression models, classification techniques, neural networks, model validation, and resampling methods. Applied R programming for statistical analysis and predictive modeling.}{uofh.jpg} \\
+    \cvevent{2025}{Artificial Intelligence}{COSC 4368}{University of Houston \color{cvred}}{Studied fundamental AI concepts, algorithms, and emerging techniques. Implemented AI models using Python, applying machine learning methods to real-world problems.}{cougarcs.png} \\
+\end{tabular}
+\vspace{3em}
+
+\begin{minipage}[t]{0.3\textwidth}
+
+
+\section*{Languages}
+\begin{tabular}{l | ll}
+\textbf{Spanish} & C2 & {\phantom{x}\footnotesize Native Tongue} \\
+\textbf{English} & C2 & \pictofraction{\faCircle}{cvgreen}{4}{black!30}{0}{\tiny} \\
+\textbf{Portuguese} & C2 & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{3}{\tiny} \\
+\end{tabular}
+\bigskip
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+    \section*{Projects}
+    \vspace{0.5em} % Adds some space before starting the list of projects
+    \begin{itemize}
+        \item \textbf{PrettyLittleThingsTX}: \emph{Fully Responsive E-Commerce Website} (HTML5, CSS, SCSS, JavaScript)
+        \item \textbf{Space Oddysey}: \emph{Terminal-Based Game} (C++)
+        \item \textbf{PUMP Mobile}: \emph{Website Landing-Page} (HTML5, CSS)
+    \end{itemize}
+    \end{minipage}
+    \bigskip
+    
+    
+
+
+
+
+
+
+\vfill{} % Whitespace before final footer
+\hfill{}
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small Joseph Gonzalez\icon{\faEnvelopeO}{cvgreen}{} jrgonz40@cougarnet.uh.edu \icon{\faMapMarker}{cvgreen}{} Houston, TX \icon{\faPhone}{cvgreen}{} 281-606-9553 \newline\icon{\faAt}{cvgreen}{} \protect\url{linkedin.com/in/joseph-gonzalez-724b49240/}
+}
+\end{center}
+\end{minipage}
+
+\end{paracol}
+
+\end{document}
